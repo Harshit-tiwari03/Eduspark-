@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submissions - EduSpark</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav>
+    <span class="logo">Edu<span>Spark</span></span>
+    <a href="../index.html" class="nav-link">Home</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="submissions.html" class="nav-link active">Submissions</a>
+    <a href="dashboard.html" class="nav-link">Dashboard</a>
+    <a href="dashboard.html" class="nav-cta">Get Started</a>
+  </nav>
+
+  <main>
+    <div class="container wide">
+      <h2>Form Submissions</h2>
+      <p class="subtitle">Messages received through the Contact page.</p>
+
+      <table id="submissionTable">
+        <thead>
+          <tr><th>Name</th><th>Email</th><th>Message</th></tr>
+        </thead>
+        <tbody id="submissionBody"></tbody>
+      </table>
+      <p id="noDataMsg" style="display:none;">No submissions yet.</p>
+    </div>
+  </main>
+
+  <footer>&copy; 2026 EduSpark. Built for learners.</footer>
+
+  <script src="../js/submissions.js"></script>
+</body>
+</html>

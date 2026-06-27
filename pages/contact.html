@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - EduSpark</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav>
+    <span class="logo">Edu<span>Spark</span></span>
+    <a href="../index.html" class="nav-link">Home</a>
+    <a href="contact.html" class="nav-link active">Contact</a>
+    <a href="submissions.html" class="nav-link">Submissions</a>
+    <a href="dashboard.html" class="nav-link">Dashboard</a>
+    <a href="dashboard.html" class="nav-cta">Get Started</a>
+  </nav>
+
+  <main>
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p class="subtitle">Got a question? We'd love to hear from you.</p>
+
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name">
+        <p class="error" id="nameError"></p>
+
+        <input type="email" id="email" placeholder="Your Email">
+        <p class="error" id="emailError"></p>
+
+        <textarea id="message" rows="4" placeholder="Your Message"></textarea>
+        <p class="error" id="messageError"></p>
+
+        <button type="submit">Send Message</button>
+        <p class="success-msg" id="successMsg"></p>
+      </form>
+    </div>
+  </main>
+
+  <footer>&copy; 2026 EduSpark. Built for learners.</footer>
+
+  <script src="../js/contact.js"></script>
+</body>
+</html>

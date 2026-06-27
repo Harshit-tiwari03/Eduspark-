@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - EduSpark</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav>
+    <span class="logo">Edu<span>Spark</span></span>
+    <a href="../index.html" class="nav-link">Home</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="submissions.html" class="nav-link">Submissions</a>
+    <a href="dashboard.html" class="nav-link active">Dashboard</a>
+    <a href="dashboard.html" class="nav-cta">Get Started</a>
+  </nav>
+
+  <main>
+    <div class="container">
+      <h2>Task Manager Dashboard</h2>
+      <p class="subtitle">Add, edit, delete and search your tasks.</p>
+
+      <div class="task-controls">
+        <input type="text" id="taskInput" placeholder="Enter a task">
+        <button onclick="addTask()">Add Task</button>
+      </div>
+
+      <input type="text" id="searchBox" placeholder="Search tasks..." onkeyup="searchTasks()">
+
+      <ul id="taskList"></ul>
+    </div>
+  </main>
+
+  <footer>&copy; 2026 EduSpark. Built for learners.</footer>
+
+  <script src="../js/dashboard.js"></script>
+</body>
+</html>
